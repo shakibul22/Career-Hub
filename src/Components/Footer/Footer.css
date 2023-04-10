@@ -1,0 +1,15 @@
+.footer-title {
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 20px;
+}
+ul,p{
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 30px;
+
+
+color: rgba(255, 255, 255, 0.7);
+}
