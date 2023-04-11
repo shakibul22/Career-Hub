@@ -5,10 +5,9 @@ import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Home from './Components/Home/Home';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
-import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
-import JobCatagoryList from './Components/Job-catagory-list/JobCatagoryList';
-import FeatureJobs from './Components/Feature-Jobs/FeatureJobs';
+import JobDetails from './Components/JobDetails/JobDetails';
+import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 
 const router = createBrowserRouter([
   {
@@ -25,9 +24,10 @@ const router = createBrowserRouter([
       },
    
      
+      { path: '/job-details', element: <JobDetails/> },
       { path: '/statistics', element: <Statistics/> },
       { path: '/applied-jobs', element: <AppliedJobs/> },
-      { path: '/blog', element: <Blog /> },
+      { path: '/blog', element: <Blog/> },
    
     ]
   },

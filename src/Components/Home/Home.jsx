@@ -15,8 +15,8 @@ const Home = () => {
   console.log(jobs);
 
   return (
-    <div>
-      <section className='banner flex mt-8 '>
+    <div className='flex flex-col justify-center'>
+      <section className='banner flex  mt-8 '>
         <div className='bg-white-200 relative  text-start p-4'>
           <div className='my-container text-start flex flex-col  pb-24  lg:pb-56 text-gray-900'>
             <h1 className='text-2xl w-full lg:leading-tight sm:text-4xl lg:text-6xl lg:max-w-3xl title-text'>
@@ -61,7 +61,7 @@ const Home = () => {
         <h5>Explore thousands of job opportunities with all the information you need. Its your future</h5>
       </div >
   
-  <div className='grid grid-cols-1  p-5 md:grid-cols-2 col-1 sm:grid-cols-1 ml-12 gap-4 mb-4'>
+  <div className='feature '>
   {
         jobs.map(job => <FeatureJobs
         key={job.id}
@@ -69,11 +69,9 @@ const Home = () => {
         ></FeatureJobs>)
       }
   </div>
-
-
-      <button className=' btn btn-see-all'>See All</button>
-
-
+     <div className='text-center p-7'>
+     <button className=' btn-see-all px-5 py-2 rounded-lg bg-purple-300 text-sm font-bold'>See All</button>
+     </div>
     </div>
   );
 };

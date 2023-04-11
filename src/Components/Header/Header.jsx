@@ -12,7 +12,7 @@ const Header = () => {
                <div className="navbar-center  text-black md:flex gap-3  fs-4">
                <Link to="/">Home</Link>
                <Link to="/statistics">Staistics</Link>
-               <Link to="/appliedJobs">Applied-jobs</Link>
+               <Link to="/applied-jobs">Applied-jobs</Link>
                <Link to="/blog">Blog</Link>
                 
             </div>

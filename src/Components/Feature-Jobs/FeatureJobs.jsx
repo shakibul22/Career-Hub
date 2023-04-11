@@ -21,7 +21,7 @@ const FeatureJobs = ({ job }) => {
                             <p className='text-current'>{address}</p>
                             <p className='text-current'>Salary: {salary}</p>
                         </div>
-                        <Link ><button className='bg-purple-400 p-2  text-sm text-center rounded-lg'>View Details</button></Link>
+                        <Link to="/job-details"><button className='bg-purple-400 p-2  text-sm text-center rounded-lg'>View Details</button></Link>
                     </div>
                 </div>
             </div>
