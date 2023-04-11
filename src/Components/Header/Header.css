@@ -1,6 +1,10 @@
-.btn {
+.appling-btn {
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
-    border-radius: 8px;
+    border-radius: 7px;
+    padding: 6px;
+    text-align: center;
+    border: 2px rgb(37, 50, 52) mediumslateblue;
+    font-size: 14px;
 }
 
 .header-title {

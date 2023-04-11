@@ -1,0 +1,27 @@
+
+[
+    {  
+        "id": "1",
+        "title": "Account & Finance",
+        "icon": "https://icones.pro/wp-content/uploads/2021/06/icone-de-la-calculatrice-noir.png",
+        "available_jobs": "1056 Jobs Available"
+    },
+    {
+        "id": "2",
+        "title": "Creative Design",
+        "icon": "https://cdn-icons-png.flaticon.com/512/702/702814.png",
+        "available_jobs": "300 Jobs Available"
+    },
+    {
+        "id": "3",
+        "title": "Marketing & Sales",
+        "icon": "https://cdn-icons-png.flaticon.com/512/2949/2949101.png",
+        "available_jobs": "100 Jobs Available"
+    },
+    {
+        "id": "4",
+        "title": "Engineering Job",
+        "icon": "https://cdn-icons-png.flaticon.com/512/1693/1693746.png",
+        "available_jobs": "20 Jobs Available"
+      }
+]

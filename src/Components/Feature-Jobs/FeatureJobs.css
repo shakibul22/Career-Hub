@@ -1,0 +1,16 @@
+.feature-title {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 38px;
+    color: #1A1919;
+}
+
+.btn-see-all {}
+
+.remote {
+  
+    width: 70px;
+    height: 30px;
+  border: 2px solid plum;
+    border-radius: 4px;
+}
