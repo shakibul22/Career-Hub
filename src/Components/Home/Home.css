@@ -1,7 +1,3 @@
-.btn {
-    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
-    border-radius: 8px;
-}
 
 .my-container span {
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
@@ -9,4 +5,15 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+@media screen and (max-width: 688px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-img{
+        width: 100%;
+        margin-top: -90px;
+    }
+ 
 }

@@ -1,4 +1,4 @@
-.footer-title {
+.title {
     color: #FFFFFF;
     font-family: 'Manrope';
     font-weight: 600;
@@ -12,4 +12,11 @@ line-height: 30px;
 
 
 color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (max-width: 688px) {
+ .footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+ }
 }

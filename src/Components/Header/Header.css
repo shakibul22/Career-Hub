@@ -2,3 +2,36 @@
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 8px;
 }
+
+.header-title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 32px;
+    color: hwb(0 4% 96%);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 688px) {
+    .navbar{
+        flex-direction:row;
+    }
+    .header-title {
+        font-family: 'Manrope';
+        
+        font-size: 12px;
+       
+    }
+    .navbar-center{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+     
+    }
+    .navbar-end{
+       font-size: 8px;
+
+    }
+}
