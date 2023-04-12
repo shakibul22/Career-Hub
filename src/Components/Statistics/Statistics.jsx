@@ -6,7 +6,7 @@ const Statistics = () => {
     const data = [{ name: 'A-1', marks: 58 },{ name: 'A-2', marks: 58 },{ name: 'A-3', marks: 54 },{ name: 'A-4', marks: 59 },{ name: 'A-5', marks: 53 },{ name: 'A-6', marks: 57 },{ name: 'A-7', marks: 54 },{ name: 'A-8', marks: 58 },     
     ];
     return (
-        <div className='chart mt-7'>
+        <div className='chart mt-7 '>
            
             <ComposedChart
                 width={300}

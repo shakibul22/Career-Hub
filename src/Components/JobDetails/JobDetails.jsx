@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './JobDetails.css'
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { addToDb } from '../../Utilities/fakeDB';
-import Detail from '../Detail/Detail';
-
 const JobDetails = () => {
     const jobDetails=useLoaderData();
     const detailsId=useParams();
@@ -16,11 +14,12 @@ const JobDetails = () => {
         }
 
     })
+    console.log(details);
 
-    // const handleAddToAppliedJobs=(id)=>{
-    //     console.log(id);
-    //     addToDb(id)
-    //  }
+    const handleAddToAppliedJobs=(id)=>{
+        console.log(id);
+        addToDb(id)
+     }
     return (
         <div className=' p-10'>
             <h1 className='job-details-title mb-20 text-center mt-5 font-bold text-3xl'>Job Details</h1>
@@ -38,8 +37,13 @@ const JobDetails = () => {
                     <h4 className='font-bold mb-3'>Job Details:</h4>
                     <hr/>
                     <h6 className='font-sm p-2'><span className='font-semibold'>Salary:</span> {details.salary}</h6>
-                    <h6 className='font-sm p-2 mb-11'><span className='font-semibold'>Job Title:</span> {details.title}</h6>
-                    <button className='bg-purple-300 rounded-lg p-2 font-bold'>Apply Now</button>
+                    <h6 className='font-sm p-2 mb-3'><span className='font-semibold'>Job Title:</span> {details.title}</h6>
+                    <h4 className='font-bold mb-2'>Contact Information:</h4>
+                    <hr />
+                    <h6 className='font-sm p-1 mb-1'><span className='font-semibold'>Phone:</span> {details.phone}</h6>
+                    <h6 className='font-sm p-1 mb-1'><span className='font-semibold'>Email:</span> {details.email}</h6>
+                    <h6 className='font-sm p-1 mb-5'><span className='font-semibold'>Address:</span> {details.address}</h6>
+                    <button  onClick={()=>handleAddToAppliedJobs(details.id)}className='btn bg-purple-300 rounded-lg p-2 font-bold'>Apply Now</button>
                 </div>
                 </div>
 

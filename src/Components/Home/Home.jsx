@@ -13,7 +13,7 @@ const Home = () => {
       .then(res => res.json())
       .then(data => {
         
-        setJobs(data.slice(0,3))
+        setJobs(data.slice(0,4))
       })
   }, [])
 

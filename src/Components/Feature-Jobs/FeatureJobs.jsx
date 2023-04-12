@@ -11,7 +11,8 @@ const FeatureJobs = ({ job }) => {
                 <img src={logoUrl} className='w-1/5 h-30' alt="" />
                 <div className=''>
                     <div className='font-bold text-xl mb-2'>
-                        <h5 className=' font-light mb-3'>{title}</h5>
+                        <h5 className=' font-sm mb-3'>{title}</h5>
+                        <h6 className='font-light mb-3'>{company}</h6>
                         <div className='flex row-auto gap-2'>
                             <p className='remote font-bold  text-purple-900 text-center bg-white-300'>Remote</p >
                             <p className='remote font-bold  text-purple-900 text-center bg-white-300'>Full Time</p >
