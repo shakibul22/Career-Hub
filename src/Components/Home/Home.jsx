@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Home.css'
 import JobCatagoryList from '../Job-catagory-list/JobCatagoryList';
 import FeatureJobs from '../Feature-Jobs/FeatureJobs';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
+
 
 const Home = () => {
   const jobCatagoryLists = useLoaderData();
@@ -10,9 +11,22 @@ const Home = () => {
   useEffect(() => {
     fetch('/job.json')
       .then(res => res.json())
-      .then(data => setJobs(data))
+      .then(data => {
+        
+        setJobs(data.slice(0,3))
+      })
   }, [])
-  console.log(jobs);
+
+  const seeAllJob=()=>{
+const [allJobs,setAllJobs]=useState([]);
+useEffect(()=>{
+  fetch('/job.json')
+  .then(res=>res.json())
+  .then(data=>setAllJobs(data))
+},[])
+
+  }
+
 
   return (
     <div className='flex flex-col justify-center'>
@@ -70,7 +84,7 @@ const Home = () => {
       }
   </div>
      <div className='text-center p-7'>
-     <button className=' btn-see-all px-5 py-2 rounded-lg bg-purple-300 text-sm font-bold'>See All</button>
+     <Link to="/"><button onClick={()=>seeAllJob(allJobs)} className=' btn-see-all px-5 py-2 rounded-lg bg-purple-300 text-sm font-bold'>See All</button></Link>
      </div>
     </div>
   );

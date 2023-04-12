@@ -17,7 +17,7 @@ const Header = () => {
                 
             </div>
             <div className="navbar-end">
-                <Link className="appling-btn px-4 ml-2">Apply</Link>
+                <Link className="appling-btn px-4 ml-2">Start Applying</Link>
             </div>
        
         </nav>

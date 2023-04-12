@@ -3,8 +3,7 @@ import "./FeatureJobs.css"
 import { Link,  } from 'react-router-dom';
 
 const FeatureJobs = ({ job }) => {
-    console.log(job);
-    const { company, title ,logoUrl,address,salary} = job;
+    const { company, title ,logoUrl,address,salary,id} = job;
 
     return (
         <div>
@@ -21,7 +20,7 @@ const FeatureJobs = ({ job }) => {
                             <p className='text-current'>{address}</p>
                             <p className='text-current'>Salary: {salary}</p>
                         </div>
-                        <Link to="/job-details"><button className='bg-purple-400 p-2  text-sm text-center rounded-lg'>View Details</button></Link>
+                        <Link to={`/job-details/${id}`}><button className='bg-purple-400 p-2  text-sm text-center rounded-lg'>View Details</button></Link>
                     </div>
                 </div>
             </div>
